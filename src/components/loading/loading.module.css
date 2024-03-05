@@ -1,0 +1,44 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffffe0;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.center img {
+  width: 100px;
+  opacity: 0;
+  animation: fadeInLogo 0.2s 0.1s ease-out forwards;
+}
+
+@keyframes fadeInLogo {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

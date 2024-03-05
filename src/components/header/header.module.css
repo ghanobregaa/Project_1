@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-color: #ffffff90;
+  background-color: #ffffff60;
   backdrop-filter: blur(15px);
   padding: 2rem;
   position: fixed;
@@ -8,8 +8,53 @@
 
 .navBar {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-  height: 45px;
+  height: 40px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btnRegister {
+  display: flex;
+  align-items: center;
+  height: var(--btnHeight);
+  padding: 0 20px;
+  font-weight: 500;
+  background-color: #242424;
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.btnRegister:hover {
+  background-color: #353535;
+}
+
+.btnLogin {
+  display: flex;
+  align-items: center;
+  height: var(--btnHeight);
+  padding: 0 20px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #242424;
+  border: 1px solid transparent;
+  font-size: 14px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.btnLogin:hover {
+  background-color: #f5f5f5;
 }

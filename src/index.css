@@ -13,6 +13,8 @@
   --primaryButtonColorHover: rgba(12, 12, 12, 0.85);
   --primaryButtonTextColor: rgb(255, 255, 255);
 
+  --btnHeight: 48px;
+
   /* Secondary Button */
   --secondaryButtonColor: rgb(242, 242, 242);
   --secondaryButtonColorHover: rgb(234, 234, 234);
@@ -29,10 +31,7 @@
   letter-spacing: 0.5pt;
   font-family: "Mona sans", sans-serif;
 }
-button {
-  font-weight: 500;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  font-size: 14px;
-  cursor: pointer;
+
+a {
+  text-decoration: none;
 }
