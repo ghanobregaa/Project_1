@@ -5,6 +5,13 @@ import Loading from '../../components/loading/loading';
 export default function Login() {
     const [isLoading, setIsLoading] = useState(false);
 
+    function fetchLogin() {
+        setIsLoading(true);
+        setTimeout(() => {
+            window.location = "/dashboard";
+        }, 1000);
+    }
+
     return (
         <>
             {isLoading ? <Loading /> : ""}
@@ -20,7 +27,7 @@ export default function Login() {
                         <div className={styles.inputBox}><input type='password' /></div>
                     </div>
                     <div className={styles.columnButtons}>
-                        <button onClick={() => setIsLoading(true)} className={styles.buttonLogin}>Iniciar sessão</button>
+                        <button onClick={() => fetchLogin()} className={styles.buttonLogin}>Iniciar sessão</button>
                         <div className={styles.option}>
                             <div className={styles.line}></div>
                             <span>ou</span>

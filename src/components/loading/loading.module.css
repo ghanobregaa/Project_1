@@ -27,8 +27,8 @@
   gap: 15px;
 }
 
-.center img {
-  width: 100px;
+.center .logo {
+  transform: scale(2);
   opacity: 0;
   animation: fadeInLogo 0.2s 0.1s ease-out forwards;
 }
