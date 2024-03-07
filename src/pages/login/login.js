@@ -1,39 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./login.module.css";
-import Loading from '../../components/loading/loading';
 
 export default function Login() {
-    const [isLoading, setIsLoading] = useState(false);
-
-    function fetchLogin() {
-        setIsLoading(true);
-        setTimeout(() => {
-            window.location = "/dashboard";
-        }, 1000);
-    }
 
     return (
         <>
-            {isLoading ? <Loading /> : ""}
-            <div className={styles.centerLogo}><img src='logo.svg' alt='logo' onClick={() => window.location = "/"} /></div>
             <div className={styles.center}>
                 <div className={styles.box}>
-                    <div className={styles.inputLabel}>
-                        <label>E-mail</label>
-                        <div className={styles.inputBox}><input autoFocus /></div>
-                    </div>
-                    <div className={styles.inputLabel}>
-                        <label>Palavra-passe</label>
-                        <div className={styles.inputBox}><input type='password' /></div>
-                    </div>
-                    <div className={styles.columnButtons}>
-                        <button onClick={() => fetchLogin()} className={styles.buttonLogin}>Iniciar sessão</button>
-                        <div className={styles.option}>
-                            <div className={styles.line}></div>
-                            <span>ou</span>
-                            <div className={styles.line}></div>
+                    <div className={styles.boxContainer}>
+                        <p className={styles.title}>Entrar</p>
+                        <div className={styles.column}>
+                            <div className={styles.labels}>
+                                <label>Email</label>
+                                <div className={styles.boxInput}>
+                                    <input autoFocus />
+                                </div>
+                            </div>
+                            <div className={styles.labels}>
+                                <label>Palavra-passe</label>
+                                <div className={styles.boxInput}>
+                                    <input type='password' />
+                                </div>
+                            </div>
                         </div>
-                        <button className={styles.buttonRegister}>Criar conta</button>
+                        <div className={styles.btnLogin}>Iniciar sessão</div>
                     </div>
                 </div>
             </div>

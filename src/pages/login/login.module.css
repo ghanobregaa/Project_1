@@ -1,110 +1,70 @@
 .center {
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
   display: grid;
   place-items: center;
 }
-.centerLogo {
-  width: 100%;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.centerLogo img {
-  height: 40px;
-  cursor: pointer;
-}
-
 .box {
-  width: min(375px, 100% - 2rem);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  width: min(400px, 100% - 16px);
+  padding: 30px;
+  border-radius: 20px;
 }
 
-.inputLabel {
+.boxContainer {
   width: 100%;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.column,
+.labels {
   display: flex;
   flex-direction: column;
+}
+
+.column {
+  gap: 25px;
+}
+
+.labels {
   gap: 10px;
 }
 
-.inputLabel label {
-  font-size: 14px;
+.labels label {
+  color: var(--labelsColor);
 }
 
-.inputBox {
-  border: 1px solid #dddddd;
-  border-radius: 6px;
+.boxInput {
+  background-color: var(--inputColor);
+  border-radius: 10px;
+  border: 1px solid var(--inputBorder);
+  transition: 0.15s ease-in-out;
 }
 
-.inputBox:focus-within,
-.inputBox:hover {
-  border: 1px solid var(--borderBtnColor);
-  box-shadow: 0px 0px 10px 5px var(--borderShadowBtnColor);
-  transition: 0.1s ease-in-out;
+.boxInput:hover,
+.boxInput:focus-within {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2.5px var(--inputShadow);
+  border: 1px solid var(--inputBorderHover);
 }
 
-.inputBox input {
-  width: 100%;
-  background-color: transparent;
-  border: 0;
-  outline: none;
-  font-size: 14px;
-  padding: 16px 24px;
-}
-
-.columnButtons {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.buttonRegister,
-.buttonLogin {
-  font-weight: 500;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  font-size: 14px;
+.btnLogin {
+  margin-top: 30px;
+  text-align: center;
+  background-color: var(--buttonColor);
+  color: var(--buttonText);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
   cursor: pointer;
 }
 
-.buttonRegister {
-  background-color: var(--secondaryButtonColor);
-  color: var(--secondaryButtonTextColor);
-  padding: 16px 24px;
-}
-
-.buttonRegister:hover {
-  background-color: var(--secondaryButtonColorHover);
-  transition: 0.1s ease-in-out;
-}
-
-.buttonLogin {
-  background-color: var(--primaryButtonColor);
-  color: var(--primaryButtonTextColor);
-  padding: 16px 24px;
-}
-
-.buttonLogin:hover {
-  background-color: var(--primaryButtonColorHover);
-  transition: 0.1s ease-in-out;
-}
-
-.option {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  color: #b5b5b5;
-  font-size: 14px;
-}
-
-.option .line {
-  background-color: #b5b5b5;
-  height: 1px;
-  width: 100%;
+.btnLogin:hover {
+  background-color: var(--buttonColorHover);
 }

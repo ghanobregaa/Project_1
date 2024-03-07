@@ -1,4 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 @font-face {
   font-family: "Mona sans";
   src: local("Mona sans"),
@@ -8,32 +9,44 @@
 :root {
   --background: rgb(255, 255, 255);
 
-  --textColor: rgba(5, 5, 5, 1);
+  --primaryColor: rgb(255, 255, 255);
+  --secondaryColor: rgb(245, 245, 245);
+  --thirdColor: rgb(240, 240, 240);
 
-  /* Primary Button */
-  --primaryButtonColor: rgb(12, 12, 12);
-  --primaryButtonColorHover: rgba(12, 12, 12, 0.85);
-  --primaryButtonTextColor: rgb(255, 255, 255);
+  --textColor: rgb(0, 0, 0);
+  --labelsColor: rgb(24, 24, 24);
 
-  --btnHeight: 48px;
+  --boxBorder: rgba(220, 220, 220, 1);
 
-  /* Secondary Button */
-  --secondaryButtonColor: rgb(242, 242, 242);
-  --secondaryButtonColorHover: rgb(234, 234, 234);
-  --secondaryButtonTextColor: rgb(12, 12, 12);
+  --inputColor: rgb(247, 247, 247);
+  --inputBorder: rgba(235, 235, 235, 1);
+  --inputBorderHover: rgba(197, 8, 214, 0.2);
+  --inputShadow: rgba(197, 8, 214, 0.1);
 
-  --borderBtnColor: rgba(178, 5, 208, 0.3);
-  --borderShadowBtnColor: rgba(178, 5, 208, 0.1);
+  --buttonColor: rgb(24, 24, 24);
+  --buttonColorHover: rgb(50, 50, 50);
+  --buttonText: rgb(255, 255, 255);
+  --buttonShadow: rgba(5, 5, 5, 0.18);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  letter-spacing: 0.5pt;
   font-family: "Mona sans", sans-serif;
+  color: var(--textColor);
 }
 
 a {
   text-decoration: none;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
 }

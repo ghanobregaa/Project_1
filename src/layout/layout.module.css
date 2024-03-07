@@ -2,14 +2,14 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: #000;
+  background-color: #050505;
 }
 
 .leftBar {
   width: 275px;
   height: 100%;
-  background-color: #0d0d0d;
-  border-right: 1px solid #222222;
+  background-color: #0a0a0a;
+  border-right: 1px solid #1c1c1c;
 }
 
 .items {
@@ -38,7 +38,7 @@
 
 .box:hover {
   color: #fff;
-  background-color: #2e2e2e;
+  background-color: #1c1c1c;
 }
 
 .box:hover .icon * {
