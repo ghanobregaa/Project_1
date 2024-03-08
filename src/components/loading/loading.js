@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './loading.module.css';
-import { ReactComponent as Logo } from "../../icons/logo_2.svg";
 
 export default function Loading() {
     return (
         <div className={styles.background}>
             <div className={styles.center}>
-                <Logo />
+                <img src='logo_2.svg' alt='logo' className={styles.logo} />
+                <div className={styles.loader}></div>
             </div>
         </div>
     )
