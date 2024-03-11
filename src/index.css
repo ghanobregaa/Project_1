@@ -7,7 +7,7 @@
 }
 
 :root {
-  --background: rgb(255, 255, 255);
+  --background: rgb(253, 253, 253);
 
   --primaryColor: rgb(255, 255, 255);
   --secondaryColor: rgb(245, 245, 245);
@@ -18,10 +18,10 @@
 
   --boxBorder: rgba(220, 220, 220, 1);
 
-  --inputColor: rgb(250, 250, 250);
-  --inputBorder: rgba(230, 230, 230, 1);
-  --inputBorderHover: rgba(197, 8, 214, 0.2);
-  --inputShadow: rgba(197, 8, 214, 0.1);
+  --inputColor: rgb(255, 255, 255);
+  --inputBorder: rgba(240, 240, 240, 1);
+  --inputBorderHover: rgba(24, 24, 24, 0.1);
+  --inputShadow: rgba(24, 24, 24, 0.1);
 
   --buttonColor: rgb(24, 24, 24);
   --buttonColorHover: rgb(50, 50, 50);
