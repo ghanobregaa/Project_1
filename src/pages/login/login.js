@@ -34,6 +34,9 @@ export default function Login() {
                                 </div>
                             </div>
                         </div>
+                        <div className={styles.passwordRecover}>
+                            <span>Recuperar palavra-passe</span>
+                        </div>
                         <div onClick={() => fetchLogin()} className={styles.btnLogin}>Iniciar sessão</div>
                     </div>
                 </div>

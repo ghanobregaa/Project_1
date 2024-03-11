@@ -7,21 +7,23 @@
 }
 
 :root {
-  --background: rgb(253, 253, 253);
+  --background: rgb(250, 250, 250);
 
   --primaryColor: rgb(255, 255, 255);
   --secondaryColor: rgb(245, 245, 245);
   --thirdColor: rgb(240, 240, 240);
 
   --textColor: rgb(0, 0, 0);
+  --secondaryTextColor: rgb(100, 100, 100);
+  --secondaryTextColorHover: rgb(0, 0, 0);
   --labelsColor: rgb(24, 24, 24);
 
   --boxBorder: rgba(220, 220, 220, 1);
 
   --inputColor: rgb(255, 255, 255);
   --inputBorder: rgba(240, 240, 240, 1);
-  --inputBorderHover: rgba(24, 24, 24, 0.1);
-  --inputShadow: rgba(24, 24, 24, 0.1);
+  --inputBorderHover: rgba(230, 230, 230, 1);
+  --inputShadow: rgba(230, 230, 230, 0.5);
 
   --buttonColor: rgb(24, 24, 24);
   --buttonColorHover: rgb(50, 50, 50);

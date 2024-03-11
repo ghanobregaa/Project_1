@@ -69,3 +69,19 @@
 .btnLogin:hover {
   background-color: var(--buttonColorHover);
 }
+
+.passwordRecover {
+  margin-top: 20px;
+  display: flex;
+  justify-content: right;
+}
+
+.passwordRecover span {
+  cursor: pointer;
+  color: var(--secondaryTextColor);
+  transition: 0.15s ease-in-out;
+}
+
+.passwordRecover span:hover {
+  color: var(--secondaryTextColorHover);
+}
